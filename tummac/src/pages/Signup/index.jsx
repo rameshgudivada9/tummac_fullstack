@@ -10,7 +10,7 @@ function Signup() {
 	};
 	return (
 		<div className={styles.container}>
-			<h1 className={styles.heading}>Sign up Form</h1>
+			<h1 className={styles.heading}>Sign up</h1>
 			<div className={styles.form_container}>
 				<div className={styles.left}>
 					<img className={styles.img} src="./images/signup.jpg" alt="signup" />
@@ -24,7 +24,7 @@ function Signup() {
 						className={styles.input}
 						placeholder="Password"
 					/>
-					<button className={styles.btn}>Sign Up</button>
+					<Link to="/login"><button className={styles.btn}>Sign Up</button></Link>
 					<p className={styles.text}>or</p>
 					<button className={styles.google_btn} onClick={googleAuth}>
 						<img src="./images/google.png" alt="google icon" />
